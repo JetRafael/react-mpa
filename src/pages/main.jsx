@@ -15,17 +15,17 @@ const galleryItems = [
   {
     as: "img",
     src: "./media/left.png",
-    alt: "Close-up of HTML code on a screen.",
+    alt: "Knowing the process of cooking.",
   },
   {
     as: "img",
     src: "./media/right-top.png",
-    alt: "Laptop displaying React code with a logo.",
+    alt: "Preparation is essential.",
   },
   {
     as: "img",
     src: "./media/right-bottom.png",
-    alt: "Side view of a laptop with CSS code.",
+    alt: "The perfect egg for your preference.",
   },
 ];
 

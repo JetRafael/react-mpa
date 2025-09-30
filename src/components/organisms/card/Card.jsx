@@ -5,9 +5,20 @@ import Media from "../../atoms/media/Media.jsx";
 import Typography from "../../atoms/typography/Typography.jsx";
 
 export default function Card({ link, media, title, description }) {
+  const onClick = (event) => {
+    event.preventDefault();
+    console.log("card clicked: ", event);
+  };
+
   return (
     <article className={styles.card} tabIndex={0}>
-      <a href={link} className={styles.mediaLink} aria-label={title}>
+      <a
+        href={link}
+        className={styles.mediaLink}
+        aria-label={title}
+        onClick={onClick}
+        onKeyDown={onClick}
+      >
         <div className={styles.mediaWrapper}>
           <Media {...media} />
         </div>
