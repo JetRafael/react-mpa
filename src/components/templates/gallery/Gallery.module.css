@@ -1,0 +1,24 @@
+.galleryLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1145px;
+}
+
+.galleryContainer {
+  flex: 2;
+}
+
+.infoContainer {
+  flex: 1;
+}
+
+/* Switch to a horizontal layout
+ * Align items to the top */
+@media (min-width: 1024px) {
+  .galleryLayout {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 120px 0;
+  }
+}

@@ -1,0 +1,47 @@
+.cardsLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1145px;
+}
+
+.cardGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.titleContainer {
+  height: 63px;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  padding: 0 0 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 0 30px;
+  border-bottom: solid 1px #fff;
+}
+
+@media (min-width: 600px) {
+  .cardGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .cardGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardsLayout {
+    padding: 120px 0;
+  }
+}
