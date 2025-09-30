@@ -79,13 +79,13 @@
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 00;
   src: url("/public/fonts/open-sans-v44-latin-800.woff2") format("woff2");
 }
 /* 800 Italic*/
 @font-face {
   font-family: "Open Sans";
   font-style: italic;
-  font-weight: 800;
+  font-weight: 700;
   src: url("/public/fonts/open-sans-v44-latin-800italic.woff2") format("woff2");
 }

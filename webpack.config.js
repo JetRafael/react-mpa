@@ -39,6 +39,14 @@ module.exports = {
         exclude: /\.module\.css$/,
         use: ["style-loader", "css-loader"], // No 'modules: true' here
       },
+      // Rule for font files
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        type: "asset/resource",
+        generator: {
+          filename: "fonts/[name][ext]",
+        },
+      },
     ],
   },
   plugins: [
@@ -48,7 +56,10 @@ module.exports = {
       chunks: ["main"],
     }),
     new CopyWebpackPlugin({
-      patterns: [{ from: "public", to: "." }],
+      patterns: [
+        { from: "public/media", to: "./media" },
+        { from: "public/fonts", to: "./fonts" },
+      ],
     }),
   ],
   devServer: {
