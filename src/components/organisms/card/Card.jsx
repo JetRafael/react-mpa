@@ -27,7 +27,7 @@ export default function Card({ link, media, title, description }) {
         <Typography as="p" variant="body-bold" className={styles.title}>
           {title}
         </Typography>
-        <Typography variant="body1" className={styles.description}>
+        <Typography variant="body-regular-1" className={styles.description}>
           {description}
         </Typography>
       </div>
